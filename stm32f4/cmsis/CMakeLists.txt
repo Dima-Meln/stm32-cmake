@@ -5,10 +5,10 @@ PROJECT(stm32f4cmsis)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 ENABLE_LANGUAGE(ASM)
 
-SET()
+SET(TOOLCHAIN_PREFIX /home/dima/apps/CodeBench)
 
 IF(NOT STM32_StdPeriphLib_DIR)
-    SET(STM32_StdPeriphLib_DIR "/opt/STM32F10x_StdPeriph_Lib_V3.5.0")
+    SET(STM32_StdPeriphLib_DIR "/home/dima/projects/git/stm32-cmake/stm32f4/libs/CMSIS/")
     MESSAGE(STATUS "No STM32_StdPeriphLib_DIR specified, using default: " ${STM32_StdPeriphLib_DIR})
 ENDIF()
 
@@ -19,67 +19,33 @@ INCLUDE_DIRECTORIES(
 )
 
 SET(CMSIS_SOURCES
-    ${STM32_StdPeriphLib_DIR}/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c
-    ${STM32_StdPeriphLib_DIR}/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c
+    ${STM32_StdPeriphLib_DIR}/Device/ST/STM32F4xx/Source/Templates/system_stm32f10x.c
+    ${STM32_StdPeriphLib_DIR}/Include/core_cm4.h
 )
 
-SET(STM32_STARTUP_CL ${STM32_StdPeriphLib_DIR}/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_cl.s)
-SET(STM32_STARTUP_HD ${STM32_StdPeriphLib_DIR}/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_hd.s)
-SET(STM32_STARTUP_HD_VL ${STM32_StdPeriphLib_DIR}/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_hd_vl.s)
-SET(STM32_STARTUP_LD ${STM32_StdPeriphLib_DIR}/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_ld.s)
-SET(STM32_STARTUP_LD_VL ${STM32_StdPeriphLib_DIR}/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_ld_vl.s)
-SET(STM32_STARTUP_MD ${STM32_StdPeriphLib_DIR}/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.s)
-SET(STM32_STARTUP_MD_VL ${STM32_StdPeriphLib_DIR}/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md_vl.s)
-SET(STM32_STARTUP_XL ${STM32_StdPeriphLib_DIR}/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_xl.s)
+SET(STM32F4_STARTUP ${STM32_StdPeriphLib_DIR}/Device/ST/STM32F4xx/Source/Templates/gcc_ride7/startup_stm32f4xx.s)
 
-ADD_LIBRARY(cmsis_cl ${CMSIS_SOURCES})
-SET_TARGET_PROPERTIES(cmsis_cl PROPERTIES COMPILE_FLAGS "-DSTM32F10X_CL")
+ADD_LIBRARY(cmsis_f4 ${CMSIS_SOURCES})
+SET_TARGET_PROPERTIES(cmsis_f4 PROPERTIES COMPILE_DEFINITIONS "STM32F4xx")
 
-ADD_LIBRARY(cmsis_hd ${CMSIS_SOURCES})
-SET_TARGET_PROPERTIES(cmsis_hd PROPERTIES COMPILE_DEFINITIONS "STM32F10X_HD")
 
-ADD_LIBRARY(cmsis_hd_vl ${CMSIS_SOURCES})
-SET_TARGET_PROPERTIES(cmsis_hd_vl PROPERTIES COMPILE_DEFINITIONS "STM32F10X_HD_VL")
-
-ADD_LIBRARY(cmsis_ld ${CMSIS_SOURCES})
-SET_TARGET_PROPERTIES(cmsis_ld PROPERTIES COMPILE_DEFINITIONS "STM32F10X_LD")
-
-ADD_LIBRARY(cmsis_ld_vl ${CMSIS_SOURCES})
-SET_TARGET_PROPERTIES(cmsis_ld_vl PROPERTIES COMPILE_DEFINITIONS "STM32F10X_LD_VL")
-
-ADD_LIBRARY(cmsis_md ${CMSIS_SOURCES})
-SET_TARGET_PROPERTIES(cmsis_md PROPERTIES COMPILE_DEFINITIONS "STM32F10X_MD")
-
-ADD_LIBRARY(cmsis_md_vl ${CMSIS_SOURCES})
-SET_TARGET_PROPERTIES(cmsis_md_vl PROPERTIES COMPILE_DEFINITIONS "STM32F10X_MD_VL")
-
-ADD_LIBRARY(cmsis_xl ${CMSIS_SOURCES})
-SET_TARGET_PROPERTIES(cmsis_xl PROPERTIES COMPILE_DEFINITIONS "STM32F10X_XL")
-
-INSTALL(TARGETS cmsis_cl cmsis_hd cmsis_hd_vl cmsis_ld cmsis_ld_vl cmsis_md cmsis_md_vl cmsis_xl
+INSTALL(TARGETS cmsis_f4
     RUNTIME DESTINATION bin
     LIBRARY DESTINATION lib
     ARCHIVE DESTINATION lib
 )
 
 INSTALL(FILES 
-    ${STM32_StdPeriphLib_DIR}/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h
-    ${STM32_StdPeriphLib_DIR}/Libraries/CMSIS/CM3/CoreSupport/core_cm3.h
-    ${STM32_StdPeriphLib_DIR}/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h
+    ${STM32_StdPeriphLib_DIR}/Device/ST/STM32F4xx/Include/stm32f4xx.h
+    ${STM32_StdPeriphLib_DIR}/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+    ${STM32_StdPeriphLib_DIR}/Include/core_cm4.h
     DESTINATION
-    include
+    ${TOOLCHAIN_PREFIX}/arm-none-eabi/include
 )
 
 INSTALL(FILES 
-    ${STM32_STARTUP_CL}
-    ${STM32_STARTUP_HD}
-    ${STM32_STARTUP_HD_VL}
-    ${STM32_STARTUP_MD}
-    ${STM32_STARTUP_MD_VL}
-    ${STM32_STARTUP_LD}
-    ${STM32_STARTUP_LD_VL}
-    ${STM32_STARTUP_XL}
-    ${CMAKE_CURRENT_SOURCE_DIR}/stm32_flash.ld.in
+    ${STM32F4_STARTUP}
+    ./stm32f4xx_flash_extsram.ld
     DESTINATION
-    share/cmsis/
+    ${TOOLCHAIN_PREFIX}/arm-none-eabi/lib/
 )
