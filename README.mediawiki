@@ -25,10 +25,10 @@ Variables for CMSIS and StdPeriphLib:
 
 === Build CMSIS and Standard Peripherals Library ===
 In cmsis folder:
- cmake -DCMAKE_TOOLCHAIN_FILE=../gcc_stm32.cmake -DCMAKE_INSTALL_PREFIX=<path_to_toolchain>/arm-none-eabi/ -DCMAKE_BUILD_TYPE=Release
+ cmake -DCMAKE_TOOLCHAIN_FILE=../gcc_stm32.cmake -DCMAKE_INSTALL_PREFIX=/home/dima/apps/CodeBench/arm-none-eabi/ -DCMAKE_BUILD_TYPE=Release -DPROJECT_BINARY_DIR=/home/dima/projects/git/stm32-cmake/stm32f4/cmsis/build
  make && make install
 In stdperiph folder
- cmake -DCMAKE_TOOLCHAIN_FILE=../gcc_stm32.cmake -DCMAKE_INSTALL_PREFIX=<path_to_toolchain>/arm-none-eabi/ -DCMAKE_BUILD_TYPE=Release
+ cmake -DCMAKE_TOOLCHAIN_FILE=../gcc_stm32.cmake -DCMAKE_INSTALL_PREFIX=/home/dima/apps/CodeBench/arm-none-eabi/ -DCMAKE_BUILD_TYPE=Release -DPROJECT_BINARY_DIR=/home/dima/projects/git/stm32-cmake/stm32f4/cmsis/build
  make && make install
 '''Note:''' You can use different CMAKE_INSTALL_PREFIX, but than you'll have to configure cmake search paths when using cmake modules.
 

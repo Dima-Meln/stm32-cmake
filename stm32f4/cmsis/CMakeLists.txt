@@ -2,46 +2,46 @@
 
 PROJECT(stm32f4cmsis)
 
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 ENABLE_LANGUAGE(ASM)
 
 SET(TOOLCHAIN_PREFIX /home/dima/apps/CodeBench)
 
-IF(NOT STM32_StdPeriphLib_DIR)
-    SET(STM32_StdPeriphLib_DIR "/home/dima/projects/git/stm32-cmake/stm32f4/libs/CMSIS/")
-    MESSAGE(STATUS "No STM32_StdPeriphLib_DIR specified, using default: " ${STM32_StdPeriphLib_DIR})
+IF(NOT STM32F4_CMSIS_DIR)
+    SET(STM32F4_CMSIS_DIR "/home/dima/projects/git/stm32-cmake/stm32f4/libs/CMSIS/")
+    MESSAGE(STATUS "No STM32F4_CMSIS_DIR specified, using default: " ${STM32F4_CMSIS_DIR})
 ENDIF()
 
 INCLUDE_DIRECTORIES(
-    ${STM32_StdPeriphLib_DIR}Device/ST/STM32F4xx/Include/
-    ${STM32_StdPeriphLib_DIR}/Include/
+    ${STM32F4_CMSIS_DIR}Device/ST/STM32F4xx/Include/
+    ${STM32F4_CMSIS_DIR}/Include/
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 SET(CMSIS_SOURCES
-    ${STM32_StdPeriphLib_DIR}/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
-    #${STM32_StdPeriphLib_DIR}/Include/core_cm4.h
+    ${STM32F4_CMSIS_DIR}/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+    #${STM32F4_CMSIS_DIR}/Include/core_cm4.h
 )
 
-SET(STM32F4_STARTUP ${STM32_StdPeriphLib_DIR}/Device/ST/STM32F4xx/Source/Templates/gcc_ride7/startup_stm32f4xx.s)
+SET(STM32F4_STARTUP ${STM32F4_CMSIS_DIR}/Device/ST/STM32F4xx/Source/Templates/gcc_ride7/startup_stm32f4xx.s)
 
-ADD_LIBRARY(cmsis_f4 ${CMSIS_SOURCES})
-SET_TARGET_PROPERTIES(cmsis_f4 PROPERTIES COMPILE_DEFINITIONS "STM32F4xx")
+ADD_LIBRARY(stm32f4_cmsis ${CMSIS_SOURCES})
+SET_TARGET_PROPERTIES(stm32f4_cmsis PROPERTIES COMPILE_DEFINITIONS "STM32F4xx")
 
 #&&&ADD_EXECUTABLE(startup_stm32f4xx.O)
 
-INSTALL(TARGETS cmsis_f4
+INSTALL(TARGETS stm32f4_cmsis
     RUNTIME DESTINATION bin
     LIBRARY DESTINATION lib
     ARCHIVE DESTINATION lib
 )
 
 INSTALL(FILES 
-    ${STM32_StdPeriphLib_DIR}/Device/ST/STM32F4xx/Include/stm32f4xx.h
-    ${STM32_StdPeriphLib_DIR}/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
-    ${STM32_StdPeriphLib_DIR}/Include/core_cm4.h
+    ${STM32F4_CMSIS_DIR}/Device/ST/STM32F4xx/Include/stm32f4xx.h
+    ${STM32F4_CMSIS_DIR}/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+    ${STM32F4_CMSIS_DIR}/Include/core_cm4.h
     DESTINATION
-    ${TOOLCHAIN_PREFIX}/arm-none-eabi/include
+    ${TOOLCHAIN_PREFIX}/arm-none-eabi/include/stm32f4_cmsis
 )
 
 INSTALL(FILES 
