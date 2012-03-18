@@ -55,3 +55,9 @@ INSTALL(FILES
     DESTINATION
     ${TOOLCHAIN_PREFIX}/arm-none-eabi/src/
 )
+
+INSTALL(FILES
+	FindSTM32F4_CMSIS.cmake
+	DESTINATION
+	/usr/share/cmake-2.8/Modules/
+)

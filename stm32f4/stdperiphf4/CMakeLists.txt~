@@ -108,9 +108,3 @@ INSTALL(FILES
     DESTINATION
     ${TOOLCHAIN_PREFIX}/arm-none-eabi/include/stm32f4_stdperiph
 )
-
-INSTALL(FILES
-	./FindSTM32F4_StdPeriphLib.cmake
-	DESTINATION
-	/usr/share/cmake-2.8/Modules/
-)
