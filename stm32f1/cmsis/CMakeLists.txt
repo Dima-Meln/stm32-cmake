@@ -1,10 +1,10 @@
 PROJECT(stm32cmsis)
 
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-ENABLE_LANGUAGE(ASM)
+#ENABLE_LANGUAGE(ASM)
 
 IF(NOT STM32_StdPeriphLib_DIR)
-    SET(STM32_StdPeriphLib_DIR "/opt/STM32F10x_StdPeriph_Lib_V3.5.0")
+    SET(STM32_StdPeriphLib_DIR "/home/dima/projects/git/stm32-cmake/stm32f1/libs/STM32F10x_StdPeriph_Lib_V3.5.0/")
     MESSAGE(STATUS "No STM32_StdPeriphLib_DIR specified, using default: " ${STM32_StdPeriphLib_DIR})
 ENDIF()
 

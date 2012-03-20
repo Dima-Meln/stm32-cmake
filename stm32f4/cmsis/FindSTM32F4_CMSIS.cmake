@@ -1,9 +1,9 @@
 SET(TOOLCHAIN_PREFIX /home/dima/apps/CodeBench)
 
-SET(STM32F4_CMSIS_INCLUDE_DIR ${TOOLCHAIN_PREFIX}/arm-none-eabi/include/stm32f4_cmsis)
+SET(STM32F4_CMSIS_INCLUDE_DIR ${TOOLCHAIN_PREFIX}/arm-none-eabi/include/stm32f4_cmsis/)
 SET(STM32F4_CMSIS_LIBRARIES stm32f4_cmsis)
 SET(STM32F4_CMSIS_STARTUP_SOURCE ${TOOLCHAIN_PREFIX}/arm-none-eabi/src/startup_stm32f4xx.s)
-SET(STM32F4_CMSIS_LINKER_SCRIPT ${TOOLCHAIN_PREFIX}/arm-none-eabi/lib/stm32f4xx_flash_extsram.ld)
+SET(STM32F4_CMSIS_LINKER_SCRIPT ${TOOLCHAIN_PREFIX}/arm-none-eabi/lib/stm32_flash.ld)
 
 INCLUDE(FindPackageHandleStandardArgs)
 FIND_PACKAGE_HANDLE_STANDARD_ARGS(CMSIS DEFAULT_MSG 

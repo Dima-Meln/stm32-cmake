@@ -20,7 +20,6 @@ INCLUDE_DIRECTORIES(
 
 SET(CMSIS_SOURCES
     ${STM32F4_CMSIS_DIR}/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
-    #${STM32F4_CMSIS_DIR}/Include/core_cm4.h
 )
 
 SET(STM32F4_STARTUP ${STM32F4_CMSIS_DIR}/Device/ST/STM32F4xx/Source/Templates/gcc_ride7/startup_stm32f4xx.s)
@@ -39,13 +38,20 @@ INSTALL(TARGETS stm32f4_cmsis
 INSTALL(FILES 
     ${STM32F4_CMSIS_DIR}/Device/ST/STM32F4xx/Include/stm32f4xx.h
     ${STM32F4_CMSIS_DIR}/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+    ${STM32F4_CMSIS_DIR}/Include/arm_common_tables.h
+    ${STM32F4_CMSIS_DIR}/Include/arm_math.h
+    ${STM32F4_CMSIS_DIR}/Include/core_cm0.h
+    ${STM32F4_CMSIS_DIR}/Include/core_cm3.h
     ${STM32F4_CMSIS_DIR}/Include/core_cm4.h
+    ${STM32F4_CMSIS_DIR}/Include/core_cm4_simd.h
+    ${STM32F4_CMSIS_DIR}/Include/core_cmInstr.h
+    ${STM32F4_CMSIS_DIR}/Include/core_cmFunc.h
     DESTINATION
     ${TOOLCHAIN_PREFIX}/arm-none-eabi/include/stm32f4_cmsis
 )
 
 INSTALL(FILES 
-    ./stm32f4xx_flash_extsram.ld
+    ./stm32_flash.ld
     DESTINATION
     ${TOOLCHAIN_PREFIX}/arm-none-eabi/lib/
 )
