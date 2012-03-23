@@ -1,0 +1,3 @@
+/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/bldc_cntrl.bin.dir
+/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/bldc_cntrl.elf.dir
+/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/bldc_cntrl.hex.dir

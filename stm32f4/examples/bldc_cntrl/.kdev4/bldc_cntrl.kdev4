@@ -1,0 +1,16 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x14\x00b\x00l\x00d\x00c\x00_\x00c\x00n\x00t\x00r\x00l)
+
+[CMake]
+BuildDirs=/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build
+CMakeDir=/usr/share/cmake-2.8/Modules
+Current CMake Binary=file:///usr/bin/cmake
+CurrentBuildDir=file:///home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build
+CurrentBuildType=Debug
+CurrentInstallDir=
+Extra Arguments=
+ProjectRootRelative=./
+
+[MakeBuilder]
+Default Make Environment Profile=0
+Number Of Jobs=1

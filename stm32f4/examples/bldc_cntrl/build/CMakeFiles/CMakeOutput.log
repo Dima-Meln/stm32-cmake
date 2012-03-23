@@ -1,0 +1,241 @@
+The target system is: Generic -  - arm
+The host system is: Linux - 3.2.0-1-amd64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/dima/apps/CodeBench/bin/arm-none-eabi-gcc 
+Build flags: -isystem;/home/dima/apps/CodeBench/arm-none-eabi/include;;-mthumb;-mcpu=cortex-m4;-fno-builtin;-Wall;-std=gnu99;-fdata-sections;-ffunction-sections
+Id flags: 
+
+The output was:
+0
+/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000800c
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/dima/apps/CodeBench/bin/arm-none-eabi-g++ 
+Build flags: -isystem;/home/dima/apps/CodeBench/arm-none-eabi/include;-mthumb;-mcpu=cortex-m4;-fno-builtin;-Wall;-std=gnu++0x;-fdata-sections;-ffunction-sections;-fno-rtti;-fno-exceptions
+Id flags: 
+
+The output was:
+0
+/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000800c
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Вхожу у каталог "/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.obj
+/home/dima/apps/CodeBench/bin/arm-none-eabi-gcc   -isystem /home/dima/apps/CodeBench/arm-none-eabi/include  -mthumb -mcpu=cortex-m4 -fno-builtin -Wall -std=gnu99 -fdata-sections -ffunction-sections     -o CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.obj   -c /home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/home/dima/apps/CodeBench/bin/arm-none-eabi-gcc   -isystem /home/dima/apps/CodeBench/arm-none-eabi/include  -mthumb -mcpu=cortex-m4 -fno-builtin -Wall -std=gnu99 -fdata-sections -ffunction-sections    -nostdlib -nostartfiles -Wl,--gc-sections -mthumb -mcpu=cortex-m4 CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.obj  -o cmTryCompileExec  
+/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008000
+make[1]: Залишаю каталог "/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp"
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Вхожу у каталог "/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.obj
+/home/dima/apps/CodeBench/bin/arm-none-eabi-gcc   -isystem /home/dima/apps/CodeBench/arm-none-eabi/include  -mthumb -mcpu=cortex-m4 -fno-builtin -Wall -std=gnu99 -fdata-sections -ffunction-sections     -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/home/dima/apps/CodeBench/bin/arm-none-eabi-gcc   -isystem /home/dima/apps/CodeBench/arm-none-eabi/include  -mthumb -mcpu=cortex-m4 -fno-builtin -Wall -std=gnu99 -fdata-sections -ffunction-sections    -v CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.obj  -o cmTryCompileExec   
+Using built-in specs.
+COLLECT_GCC=/home/dima/apps/CodeBench/bin/arm-none-eabi-gcc
+COLLECT_LTO_WRAPPER=/home/dima/apps/CodeBench/bin/../libexec/gcc/arm-none-eabi/4.6.1/lto-wrapper
+Target: arm-none-eabi
+Configured with: /scratch/janisjo/2011.09-arm-eabi-respin/src/gcc-4.6-2011.09/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-eabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxx-multilibs --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} -D__CS_SOURCERYGXX_MAJ__=2011 -D__CS_SOURCERYGXX_MIN__=9 -D__CS_SOURCERYGXX_REV__=82 %{!fcommon:%{!fno-common:-fno-common}} %{O2:%{!fno-remove-local-statics: -fremove-local-statics}} %{O*:%{O|O0|O1|O2|Os:;:%{!fno-remove-local-statics: -fremove-local-statics}}}' --enable-languages=c,c++ --disable-shared --enable-lto --with-newlib --with-cslibc --with-pkgversion='Sourcery CodeBench 2011.09-82' --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-headers=yes --with-sysroot=/opt/codesourcery/arm-none-eabi --with-build-sysroot=/scratch/janisjo/2011.09-arm-eabi-respin/install/arm-none-eabi --with-gmp=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-mpfr=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-mpc=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-ppl=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-cloog=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-libelf=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --disable-libgomp --with-license=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-csl-license-version=20120223 --with-csl-license-feature=gcc_ARM_EABI --enable-poison-system-directories --with-debug-prefix-map='/scratch/janisjo/2011.09-arm-eabi-respin/install=/opt/codesourcery 	    /scratch/janisjo/2011.09-arm-eabi-respin/src/gcc-4.6-2011.09=/opt/codesourcery/arm-none-eabi/src/gcc /scratch/janisjo/2011.09-arm-eabi-respin/obj/gcc-2011.09-82-arm-none-eabi-i686-pc-linux-gnu=/opt/codesourcery/arm-none-eabi/src/generated/gcc' --with-build-time-tools=/scratch/janisjo/2011.09-arm-eabi-respin/install/arm-none-eabi/bin --with-build-time-tools=/scratch/janisjo/2011.09-arm-eabi-respin/install/arm-none-eabi/bin
+Thread model: single
+gcc version 4.6.1 (Sourcery CodeBench 2011.09-82) 
+COMPILER_PATH=/home/dima/apps/CodeBench/bin/../libexec/gcc/arm-none-eabi/4.6.1/:/home/dima/apps/CodeBench/bin/../libexec/gcc/:/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/:/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/thumb2/:/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/thumb2/:/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/:/home/dima/apps/CodeBench/bin/../lib/gcc/:/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/:/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-isystem' '/home/dima/apps/CodeBench/arm-none-eabi/include' '-mthumb' '-mcpu=cortex-m4' '-fno-builtin' '-Wall' '-std=gnu99' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'cmTryCompileExec' '-D' '__CS_SOURCERYGXX_MAJ__=2011' '-D' '__CS_SOURCERYGXX_MIN__=9' '-D' '__CS_SOURCERYGXX_REV__=82' '-fno-common'
+ /home/dima/apps/CodeBench/bin/../libexec/gcc/arm-none-eabi/4.6.1/collect2 --sysroot=/home/dima/apps/CodeBench/bin/../arm-none-eabi -X -o cmTryCompileExec /home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crti.o /home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtbegin.o -L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2 -L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/thumb2 -L/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/thumb2 -L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1 -L/home/dima/apps/CodeBench/bin/../lib/gcc -L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib -L/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lc --end-group /home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtend.o /home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtn.o
+/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000800c
+make[1]: Залишаю каталог "/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp"
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-none-eabi-ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
+  ignore line: [make[1]: Вхожу у каталог "/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp"]
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/home/dima/apps/CodeBench/bin/arm-none-eabi-gcc   -isystem /home/dima/apps/CodeBench/arm-none-eabi/include  -mthumb -mcpu=cortex-m4 -fno-builtin -Wall -std=gnu99 -fdata-sections -ffunction-sections     -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1]
+  ignore line: [/home/dima/apps/CodeBench/bin/arm-none-eabi-gcc   -isystem /home/dima/apps/CodeBench/arm-none-eabi/include  -mthumb -mcpu=cortex-m4 -fno-builtin -Wall -std=gnu99 -fdata-sections -ffunction-sections    -v CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.obj  -o cmTryCompileExec   ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/dima/apps/CodeBench/bin/arm-none-eabi-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/dima/apps/CodeBench/bin/../libexec/gcc/arm-none-eabi/4.6.1/lto-wrapper]
+  ignore line: [Target: arm-none-eabi]
+  ignore line: [Configured with: /scratch/janisjo/2011.09-arm-eabi-respin/src/gcc-4.6-2011.09/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-eabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxx-multilibs --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} -D__CS_SOURCERYGXX_MAJ__=2011 -D__CS_SOURCERYGXX_MIN__=9 -D__CS_SOURCERYGXX_REV__=82 %{!fcommon:%{!fno-common:-fno-common}} %{O2:%{!fno-remove-local-statics: -fremove-local-statics}} %{O*:%{O|O0|O1|O2|Os:]
+  ignore line: [:%{!fno-remove-local-statics: -fremove-local-statics}}}' --enable-languages=c,c++ --disable-shared --enable-lto --with-newlib --with-cslibc --with-pkgversion='Sourcery CodeBench 2011.09-82' --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-headers=yes --with-sysroot=/opt/codesourcery/arm-none-eabi --with-build-sysroot=/scratch/janisjo/2011.09-arm-eabi-respin/install/arm-none-eabi --with-gmp=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-mpfr=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-mpc=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-ppl=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-cloog=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-libelf=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --disable-libgomp --with-license=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-csl-license-version=20120223 --with-csl-license-feature=gcc_ARM_EABI --enable-poison-system-directories --with-debug-prefix-map='/scratch/janisjo/2011.09-arm-eabi-respin/install=/opt/codesourcery 	    /scratch/janisjo/2011.09-arm-eabi-respin/src/gcc-4.6-2011.09=/opt/codesourcery/arm-none-eabi/src/gcc /scratch/janisjo/2011.09-arm-eabi-respin/obj/gcc-2011.09-82-arm-none-eabi-i686-pc-linux-gnu=/opt/codesourcery/arm-none-eabi/src/generated/gcc' --with-build-time-tools=/scratch/janisjo/2011.09-arm-eabi-respin/install/arm-none-eabi/bin --with-build-time-tools=/scratch/janisjo/2011.09-arm-eabi-respin/install/arm-none-eabi/bin]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 4.6.1 (Sourcery CodeBench 2011.09-82) ]
+  ignore line: [COMPILER_PATH=/home/dima/apps/CodeBench/bin/../libexec/gcc/arm-none-eabi/4.6.1/:/home/dima/apps/CodeBench/bin/../libexec/gcc/:/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/bin/]
+  ignore line: [LIBRARY_PATH=/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/:/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/thumb2/:/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/thumb2/:/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/:/home/dima/apps/CodeBench/bin/../lib/gcc/:/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/:/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-isystem' '/home/dima/apps/CodeBench/arm-none-eabi/include' '-mthumb' '-mcpu=cortex-m4' '-fno-builtin' '-Wall' '-std=gnu99' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'cmTryCompileExec' '-D' '__CS_SOURCERYGXX_MAJ__=2011' '-D' '__CS_SOURCERYGXX_MIN__=9' '-D' '__CS_SOURCERYGXX_REV__=82' '-fno-common']
+  link line: [ /home/dima/apps/CodeBench/bin/../libexec/gcc/arm-none-eabi/4.6.1/collect2 --sysroot=/home/dima/apps/CodeBench/bin/../arm-none-eabi -X -o cmTryCompileExec /home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crti.o /home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtbegin.o -L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2 -L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/thumb2 -L/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/thumb2 -L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1 -L/home/dima/apps/CodeBench/bin/../lib/gcc -L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib -L/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lc --end-group /home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtend.o /home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtn.o]
+    arg [/home/dima/apps/CodeBench/bin/../libexec/gcc/arm-none-eabi/4.6.1/collect2] ==> ignore
+    arg [--sysroot=/home/dima/apps/CodeBench/bin/../arm-none-eabi] ==> ignore
+    arg [-X] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec] ==> ignore
+    arg [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crti.o] ==> ignore
+    arg [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtbegin.o] ==> ignore
+    arg [-L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2] ==> dir [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2]
+    arg [-L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/thumb2] ==> dir [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/thumb2]
+    arg [-L/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/thumb2] ==> dir [/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/thumb2]
+    arg [-L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1] ==> dir [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1]
+    arg [-L/home/dima/apps/CodeBench/bin/../lib/gcc] ==> dir [/home/dima/apps/CodeBench/bin/../lib/gcc]
+    arg [-L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib] ==> dir [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib]
+    arg [-L/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib] ==> dir [/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib]
+    arg [CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [--end-group] ==> ignore
+    arg [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtend.o] ==> ignore
+    arg [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtn.o] ==> ignore
+  remove lib [gcc]
+  collapse dir [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2] ==> [/home/dima/apps/CodeBench/lib/gcc/arm-none-eabi/4.6.1/thumb2]
+  collapse dir [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/thumb2] ==> [/home/dima/apps/CodeBench/arm-none-eabi/lib/thumb2]
+  collapse dir [/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/thumb2] ==> [/home/dima/apps/CodeBench/arm-none-eabi/lib/thumb2]
+  collapse dir [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1] ==> [/home/dima/apps/CodeBench/lib/gcc/arm-none-eabi/4.6.1]
+  collapse dir [/home/dima/apps/CodeBench/bin/../lib/gcc] ==> [/home/dima/apps/CodeBench/lib/gcc]
+  collapse dir [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib] ==> [/home/dima/apps/CodeBench/arm-none-eabi/lib]
+  collapse dir [/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib] ==> [/home/dima/apps/CodeBench/arm-none-eabi/lib]
+  implicit libs: [c]
+  implicit dirs: [/home/dima/apps/CodeBench/lib/gcc/arm-none-eabi/4.6.1/thumb2;/home/dima/apps/CodeBench/arm-none-eabi/lib/thumb2;/home/dima/apps/CodeBench/lib/gcc/arm-none-eabi/4.6.1;/home/dima/apps/CodeBench/lib/gcc;/home/dima/apps/CodeBench/arm-none-eabi/lib]
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Вхожу у каталог "/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.obj
+/home/dima/apps/CodeBench/bin/arm-none-eabi-g++    -isystem /home/dima/apps/CodeBench/arm-none-eabi/include -mthumb -mcpu=cortex-m4 -fno-builtin -Wall -std=gnu++0x -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions     -o CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.obj -c /home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/home/dima/apps/CodeBench/bin/arm-none-eabi-g++    -isystem /home/dima/apps/CodeBench/arm-none-eabi/include -mthumb -mcpu=cortex-m4 -fno-builtin -Wall -std=gnu++0x -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions    -nostdlib -nostartfiles -Wl,--gc-sections -mthumb -mcpu=cortex-m4 CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.obj  -o cmTryCompileExec  
+/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008000
+make[1]: Залишаю каталог "/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp"
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Вхожу у каталог "/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.obj
+/home/dima/apps/CodeBench/bin/arm-none-eabi-g++    -isystem /home/dima/apps/CodeBench/arm-none-eabi/include -mthumb -mcpu=cortex-m4 -fno-builtin -Wall -std=gnu++0x -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions     -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/home/dima/apps/CodeBench/bin/arm-none-eabi-g++    -isystem /home/dima/apps/CodeBench/arm-none-eabi/include -mthumb -mcpu=cortex-m4 -fno-builtin -Wall -std=gnu++0x -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions    -v CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTryCompileExec   
+Using built-in specs.
+COLLECT_GCC=/home/dima/apps/CodeBench/bin/arm-none-eabi-g++
+COLLECT_LTO_WRAPPER=/home/dima/apps/CodeBench/bin/../libexec/gcc/arm-none-eabi/4.6.1/lto-wrapper
+Target: arm-none-eabi
+Configured with: /scratch/janisjo/2011.09-arm-eabi-respin/src/gcc-4.6-2011.09/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-eabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxx-multilibs --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} -D__CS_SOURCERYGXX_MAJ__=2011 -D__CS_SOURCERYGXX_MIN__=9 -D__CS_SOURCERYGXX_REV__=82 %{!fcommon:%{!fno-common:-fno-common}} %{O2:%{!fno-remove-local-statics: -fremove-local-statics}} %{O*:%{O|O0|O1|O2|Os:;:%{!fno-remove-local-statics: -fremove-local-statics}}}' --enable-languages=c,c++ --disable-shared --enable-lto --with-newlib --with-cslibc --with-pkgversion='Sourcery CodeBench 2011.09-82' --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-headers=yes --with-sysroot=/opt/codesourcery/arm-none-eabi --with-build-sysroot=/scratch/janisjo/2011.09-arm-eabi-respin/install/arm-none-eabi --with-gmp=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-mpfr=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-mpc=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-ppl=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-cloog=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-libelf=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --disable-libgomp --with-license=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-csl-license-version=20120223 --with-csl-license-feature=gcc_ARM_EABI --enable-poison-system-directories --with-debug-prefix-map='/scratch/janisjo/2011.09-arm-eabi-respin/install=/opt/codesourcery 	    /scratch/janisjo/2011.09-arm-eabi-respin/src/gcc-4.6-2011.09=/opt/codesourcery/arm-none-eabi/src/gcc /scratch/janisjo/2011.09-arm-eabi-respin/obj/gcc-2011.09-82-arm-none-eabi-i686-pc-linux-gnu=/opt/codesourcery/arm-none-eabi/src/generated/gcc' --with-build-time-tools=/scratch/janisjo/2011.09-arm-eabi-respin/install/arm-none-eabi/bin --with-build-time-tools=/scratch/janisjo/2011.09-arm-eabi-respin/install/arm-none-eabi/bin
+Thread model: single
+gcc version 4.6.1 (Sourcery CodeBench 2011.09-82) 
+COMPILER_PATH=/home/dima/apps/CodeBench/bin/../libexec/gcc/arm-none-eabi/4.6.1/:/home/dima/apps/CodeBench/bin/../libexec/gcc/:/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/:/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/thumb2/:/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/thumb2/:/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/:/home/dima/apps/CodeBench/bin/../lib/gcc/:/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/:/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-isystem' '/home/dima/apps/CodeBench/arm-none-eabi/include' '-mthumb' '-mcpu=cortex-m4' '-fno-builtin' '-Wall' '-std=gnu++0x' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-v' '-o' 'cmTryCompileExec' '-D' '__CS_SOURCERYGXX_MAJ__=2011' '-D' '__CS_SOURCERYGXX_MIN__=9' '-D' '__CS_SOURCERYGXX_REV__=82' '-fno-common'
+ /home/dima/apps/CodeBench/bin/../libexec/gcc/arm-none-eabi/4.6.1/collect2 --sysroot=/home/dima/apps/CodeBench/bin/../arm-none-eabi -X -o cmTryCompileExec /home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crti.o /home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtbegin.o -L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2 -L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/thumb2 -L/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/thumb2 -L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1 -L/home/dima/apps/CodeBench/bin/../lib/gcc -L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib -L/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm --start-group -lgcc -lc --end-group /home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtend.o /home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtn.o
+/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000800c
+make[1]: Залишаю каталог "/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp"
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-none-eabi-ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
+  ignore line: [make[1]: Вхожу у каталог "/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp"]
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/home/dima/apps/CodeBench/bin/arm-none-eabi-g++    -isystem /home/dima/apps/CodeBench/arm-none-eabi/include -mthumb -mcpu=cortex-m4 -fno-builtin -Wall -std=gnu++0x -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions     -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1]
+  ignore line: [/home/dima/apps/CodeBench/bin/arm-none-eabi-g++    -isystem /home/dima/apps/CodeBench/arm-none-eabi/include -mthumb -mcpu=cortex-m4 -fno-builtin -Wall -std=gnu++0x -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions    -v CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTryCompileExec   ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/dima/apps/CodeBench/bin/arm-none-eabi-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/dima/apps/CodeBench/bin/../libexec/gcc/arm-none-eabi/4.6.1/lto-wrapper]
+  ignore line: [Target: arm-none-eabi]
+  ignore line: [Configured with: /scratch/janisjo/2011.09-arm-eabi-respin/src/gcc-4.6-2011.09/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-eabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxx-multilibs --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} -D__CS_SOURCERYGXX_MAJ__=2011 -D__CS_SOURCERYGXX_MIN__=9 -D__CS_SOURCERYGXX_REV__=82 %{!fcommon:%{!fno-common:-fno-common}} %{O2:%{!fno-remove-local-statics: -fremove-local-statics}} %{O*:%{O|O0|O1|O2|Os:]
+  ignore line: [:%{!fno-remove-local-statics: -fremove-local-statics}}}' --enable-languages=c,c++ --disable-shared --enable-lto --with-newlib --with-cslibc --with-pkgversion='Sourcery CodeBench 2011.09-82' --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-headers=yes --with-sysroot=/opt/codesourcery/arm-none-eabi --with-build-sysroot=/scratch/janisjo/2011.09-arm-eabi-respin/install/arm-none-eabi --with-gmp=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-mpfr=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-mpc=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-ppl=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-cloog=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-libelf=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --disable-libgomp --with-license=/scratch/janisjo/2011.09-arm-eabi-respin/obj/host-libs-2011.09-82-arm-none-eabi-i686-pc-linux-gnu/usr --with-csl-license-version=20120223 --with-csl-license-feature=gcc_ARM_EABI --enable-poison-system-directories --with-debug-prefix-map='/scratch/janisjo/2011.09-arm-eabi-respin/install=/opt/codesourcery 	    /scratch/janisjo/2011.09-arm-eabi-respin/src/gcc-4.6-2011.09=/opt/codesourcery/arm-none-eabi/src/gcc /scratch/janisjo/2011.09-arm-eabi-respin/obj/gcc-2011.09-82-arm-none-eabi-i686-pc-linux-gnu=/opt/codesourcery/arm-none-eabi/src/generated/gcc' --with-build-time-tools=/scratch/janisjo/2011.09-arm-eabi-respin/install/arm-none-eabi/bin --with-build-time-tools=/scratch/janisjo/2011.09-arm-eabi-respin/install/arm-none-eabi/bin]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 4.6.1 (Sourcery CodeBench 2011.09-82) ]
+  ignore line: [COMPILER_PATH=/home/dima/apps/CodeBench/bin/../libexec/gcc/arm-none-eabi/4.6.1/:/home/dima/apps/CodeBench/bin/../libexec/gcc/:/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/bin/]
+  ignore line: [LIBRARY_PATH=/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/:/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/thumb2/:/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/thumb2/:/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/:/home/dima/apps/CodeBench/bin/../lib/gcc/:/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/:/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-isystem' '/home/dima/apps/CodeBench/arm-none-eabi/include' '-mthumb' '-mcpu=cortex-m4' '-fno-builtin' '-Wall' '-std=gnu++0x' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-v' '-o' 'cmTryCompileExec' '-D' '__CS_SOURCERYGXX_MAJ__=2011' '-D' '__CS_SOURCERYGXX_MIN__=9' '-D' '__CS_SOURCERYGXX_REV__=82' '-fno-common']
+  link line: [ /home/dima/apps/CodeBench/bin/../libexec/gcc/arm-none-eabi/4.6.1/collect2 --sysroot=/home/dima/apps/CodeBench/bin/../arm-none-eabi -X -o cmTryCompileExec /home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crti.o /home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtbegin.o -L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2 -L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/thumb2 -L/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/thumb2 -L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1 -L/home/dima/apps/CodeBench/bin/../lib/gcc -L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib -L/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm --start-group -lgcc -lc --end-group /home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtend.o /home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtn.o]
+    arg [/home/dima/apps/CodeBench/bin/../libexec/gcc/arm-none-eabi/4.6.1/collect2] ==> ignore
+    arg [--sysroot=/home/dima/apps/CodeBench/bin/../arm-none-eabi] ==> ignore
+    arg [-X] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec] ==> ignore
+    arg [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crti.o] ==> ignore
+    arg [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtbegin.o] ==> ignore
+    arg [-L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2] ==> dir [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2]
+    arg [-L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/thumb2] ==> dir [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/thumb2]
+    arg [-L/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/thumb2] ==> dir [/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/thumb2]
+    arg [-L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1] ==> dir [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1]
+    arg [-L/home/dima/apps/CodeBench/bin/../lib/gcc] ==> dir [/home/dima/apps/CodeBench/bin/../lib/gcc]
+    arg [-L/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib] ==> dir [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib]
+    arg [-L/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib] ==> dir [/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib]
+    arg [CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [--end-group] ==> ignore
+    arg [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtend.o] ==> ignore
+    arg [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2/crtn.o] ==> ignore
+  remove lib [gcc]
+  collapse dir [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/thumb2] ==> [/home/dima/apps/CodeBench/lib/gcc/arm-none-eabi/4.6.1/thumb2]
+  collapse dir [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib/thumb2] ==> [/home/dima/apps/CodeBench/arm-none-eabi/lib/thumb2]
+  collapse dir [/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib/thumb2] ==> [/home/dima/apps/CodeBench/arm-none-eabi/lib/thumb2]
+  collapse dir [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1] ==> [/home/dima/apps/CodeBench/lib/gcc/arm-none-eabi/4.6.1]
+  collapse dir [/home/dima/apps/CodeBench/bin/../lib/gcc] ==> [/home/dima/apps/CodeBench/lib/gcc]
+  collapse dir [/home/dima/apps/CodeBench/bin/../lib/gcc/arm-none-eabi/4.6.1/../../../../arm-none-eabi/lib] ==> [/home/dima/apps/CodeBench/arm-none-eabi/lib]
+  collapse dir [/home/dima/apps/CodeBench/bin/../arm-none-eabi/lib] ==> [/home/dima/apps/CodeBench/arm-none-eabi/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/home/dima/apps/CodeBench/lib/gcc/arm-none-eabi/4.6.1/thumb2;/home/dima/apps/CodeBench/arm-none-eabi/lib/thumb2;/home/dima/apps/CodeBench/lib/gcc/arm-none-eabi/4.6.1;/home/dima/apps/CodeBench/lib/gcc;/home/dima/apps/CodeBench/arm-none-eabi/lib]
+
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+GNU assembler (Sourcery CodeBench 2011.09-82) 2.21.53.20110905
+Copyright 2011 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or later.
+This program has absolutely no warranty.
+This assembler was configured for a target of `arm-none-eabi'.

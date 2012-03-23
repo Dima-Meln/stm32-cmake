@@ -1,0 +1,13 @@
+#include "stm32f4xx_it.h"
+
+#include <stm32f4xx_tim.h>
+
+void TIM6_DAC_IRQHandler(void ) {
+  if (TIM_GetITStatus(TIM6, TIM_IT_Update) != RESET)
+  {
+    /* Очищаем бит обрабатываемого прерывания */
+    TIM_ClearITPendingBit(TIM6, TIM_IT_Update);
+    /* Инвертируем состояние светодиодов */
+    //GPIO_Write(GPIOC, GPIO_ReadOutputData(GPIOC) ^ (BLUE_LED | GREEN_LED));
+  }
+}
