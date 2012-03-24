@@ -1,0 +1,1 @@
+/home/dima/projects/git/stm32-cmake/stm32f4/cmsis/build/CMakeFiles/stm32f4_cmsis.dir
