@@ -198,37 +198,15 @@ stm32f4xx.h
 stm32f4xx.h
 /home/dima/apps/CodeBench/arm-none-eabi/include/stm32f4_stdperiph/stm32f4xx.h
 
-/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/hall.cpp
+/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/timer.cpp
 stm32f4xx_rcc.h
 -
-stm32f4xx_gpio.h
--
-hall.h
-/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/hall.h
-states.h
-/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/states.h
-
-/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/hall.h
-states.h
-/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/states.h
-
-/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/motor.h
-states.h
-/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/states.h
-
-/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/states.h
-
-/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/stm32f4xx_it.cpp
 stm32f4xx_tim.h
 -
-stm32f4xx_it.h
-/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/stm32f4xx_it.h
-motor.h
-/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/motor.h
-hall.h
-/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/hall.h
+misc.h
+-
+timer.h
+/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/timer.h
 
-/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/stm32f4xx_it.h
-stm32f4xx.h
-/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/stm32f4xx.h
+/home/dima/projects/git/stm32-cmake/stm32f4/examples/bldc_cntrl/timer.h
 

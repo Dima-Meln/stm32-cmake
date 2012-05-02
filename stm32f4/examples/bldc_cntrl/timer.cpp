@@ -24,18 +24,18 @@
 
 Timer::Timer() {
   RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM6, ENABLE);
-  TIM_TimeBaseInitTypeDef base_timer;
-  TIM_TimeBaseStructInit(&base_timer);
+  TIM_TimeBaseInitTypeDef timer;
+  TIM_TimeBaseStructInit(&timer);
   /* Делитель учитывается как TIM_Prescaler + 1, поэтому отнимаем 1 */
-  base_timer.TIM_Prescaler = 168000 - 1;
-  base_timer.TIM_Period = 500;
-  TIM_TimeBaseInit(TIM6, &base_timer);
-  TIM_ITConfig(TIM6, TIM_IT_Update, ENABLE);
-  TIM_Cmd(TIM6, ENABLE);
-  NVIC_EnableIRQ(TIM6_DAC_IRQn);
+  timer.TIM_Prescaler = 168 - 1;
+  timer.TIM_Period = 500 - 1;
+  TIM_TimeBaseInit(TIM6, &timer);
+  TIM_ITConfig(TIM9, TIM_IT_Update, ENABLE);
+  TIM_Cmd(TIM9, ENABLE);
+  NVIC_EnableIRQ(TIM1_BRK_TIM9_IRQn);
 }
 
 Timer::~Timer()
 {
-
+  
 }

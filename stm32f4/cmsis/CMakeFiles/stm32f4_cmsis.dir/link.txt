@@ -1,0 +1,2 @@
+/home/dima/apps/CodeBench/bin/arm-none-eabi-ar cr libstm32f4_cmsis.a  CMakeFiles/stm32f4_cmsis.dir/home/dima/projects/git/stm32-cmake/stm32f4/libs/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c.obj
+/home/dima/apps/CodeBench/bin/arm-none-eabi-ranlib libstm32f4_cmsis.a

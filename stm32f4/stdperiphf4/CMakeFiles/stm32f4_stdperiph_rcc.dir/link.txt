@@ -1,0 +1,2 @@
+/home/dima/apps/CodeBench/bin/arm-none-eabi-ar cr libstm32f4_stdperiph_rcc.a  CMakeFiles/stm32f4_stdperiph_rcc.dir/home/dima/projects/git/stm32-cmake/stm32f4/libs/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c.obj
+/home/dima/apps/CodeBench/bin/arm-none-eabi-ranlib libstm32f4_stdperiph_rcc.a

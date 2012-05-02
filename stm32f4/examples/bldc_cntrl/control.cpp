@@ -15,6 +15,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+#include <stm32f4xx.h>
 #include <stm32f4xx_tim.h>
 
 #include "control.h"
@@ -28,6 +29,7 @@ Control::Control() {
 //}
 
 void Control::setSpeed(int speed) {
-  setinterval(60/speed);
+  
+  //TIM9->ARR = (216000/speed);
 }
 
